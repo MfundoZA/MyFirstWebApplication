@@ -14,7 +14,7 @@ namespace MyFirstWebApplication.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         public JsonFileCakeService CakeService;
-        public static IEnumerable<Cake> Cakes { get; private set; }
+        public IEnumerable<Cake> Cakes { get; private set; }
 
         public HomeController(ILogger<HomeController> logger,
             JsonFileCakeService cakeService)
@@ -26,7 +26,7 @@ namespace MyFirstWebApplication.Controllers
         public IActionResult Index()
         {
             Cakes = CakeService.GetProducts();
-            return View(Cakes);
+            return View(this);
         }
 
         public IActionResult Privacy()
