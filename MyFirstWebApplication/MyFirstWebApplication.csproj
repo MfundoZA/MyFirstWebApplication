@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Images\Cakes\" />
+    <None Include="wwwroot\Images\Cakes\Banana Cake.jpg" />
+    <None Include="wwwroot\Images\Cakes\Cheesecake.webp" />
+    <None Include="wwwroot\Images\Cakes\Chocolate Cake.webp" />
+    <None Include="wwwroot\Images\Cakes\Red Velvet Cake.webp" />
+    <None Include="wwwroot\Images\Cakes\Vanilla Cake.webp" />
   </ItemGroup>
 
 </Project>
