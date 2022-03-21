@@ -1,14 +1,27 @@
-﻿@model Cake[]
+﻿@model MyFirstWebApplication.Controllers.HomeController
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Mbali's Bakery</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <!-- <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> -->
 </div>
 
-@foreach (var cake in MyFirstWebApplication.Controllers.HomeController.Cakes)
-{ 
-    <h2>@cake.name</h2>
-}
+<div class="card-columns">
+    @foreach (var cake in Model.Cakes)
+    {
+    <div class="card" style="width: 330px;">
+        <div class="card-img" style="background-image: url('@cake.path')"></div>
+        <div class="card-body">
+            <h5 class="card-title">@cake.name</h5>
+            <p>@cake.description</p>
+            <h4>R @cake.price</h4>
+        </div>
+    </div>
+        
+            
+            
+    }
+</div>
+
