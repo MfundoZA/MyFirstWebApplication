@@ -3,30 +3,35 @@
     "cakeId": 101,
     "name": "Chocolate Cake",
     "description": "A classic like already said; one can hardly find a person who doesn’t enjoy chocolate.",
-    "price": 139.99
+    "price": 139.99,
+    "path": "Images/Cakes/Chocolate Cake.webp"
   },
   {
     "cakeId": 102,
     "name": "Red Velvet Cake",
     "description": "The delightful colour combination coupled with a fantastic taste makes red velvet as a cake flavour which is a treat to both eyes and tongue.",
-    "price": 159.99
+    "price": 159.99,
+    "path": "Images/Cakes/Red Velvet Cake.webp"
   },
   {
     "cakeId": 103,
     "name": "Vanilla Cake",
     "description": "Vanilla cake is the cake that we all turn to when we are bored with everything else. Isn’t it?",
-    "price": 99.99
+    "price": 99.99,
+    "path": "Images/Cakes/Vanilla Cake.webp"
   },
   {
     "cakeId": 104,
     "name": "Cheesecake",
     "description": "When made well, mixed with the right flavours, cheesecake can easily delight even the most delicate taste bud of your mouth.",
-    "price": 129.99
+    "price": 129.99,
+    "path": "Images/Cakes/Cheesecake.webp"
   },
   {
     "cakeId": 105,
     "name": "Banana Cake",
     "description": "The cake flavour that makes you go bananas is the banana cake",
-    "price": 99.99
+    "price": 99.99,
+    "path": "Images/Cakes/Banana Cake.jpg"
   }
 ]

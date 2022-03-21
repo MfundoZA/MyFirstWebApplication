@@ -21,6 +21,9 @@ namespace MyFirstWebApplication.Models
         [JsonPropertyName("price")]
         public double price { get; set; }
 
+        [JsonPropertyName("path")]
+        public string path { get; set; }
+
         public override string ToString() => JsonSerializer.Serialize<Cake>(this);
     }
 }
