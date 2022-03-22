@@ -65,7 +65,6 @@ body {
 
 .card-columns .card-img {
     height: 330px;
-    width: 330px;
     vertical-align: bottom;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
