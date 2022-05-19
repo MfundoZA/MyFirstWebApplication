@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyFirstWebApplication.Models;
-using MyFirstWebApplication.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,13 +13,11 @@ namespace MyFirstWebApplication.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        // public JsonFileCakeService CakeService;
         public static string ConnnectionString { get; private set; }
         public static SqlConnection Connection { get; set; }
         public List<Cake> Cakes { get; private set; }
 
-        public HomeController(ILogger<HomeController> logger,
-            JsonFileCakeService cakeService)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
             // CakeService = cakeService;
