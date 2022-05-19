@@ -6,7 +6,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyFirstWebApplication.Models;
-using MyFirstWebApplication.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +27,6 @@ namespace MyFirstWebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddTransient<JsonFileCakeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,13 +54,6 @@ namespace MyFirstWebApplication
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapGet("/products", (context) =>
-                {
-                    var cakes = app.ApplicationServices.GetService<JsonFileCakeService>().GetProducts();
-                    var json = JsonSerializer.Serialize<IEnumerable<Cake>>(cakes);
-
-                    return context.Response.WriteAsync(json);
-                });
             });
         }
     }
